@@ -6,6 +6,9 @@ require_relative 'db/connection'
 
 # Load models
 require_relative 'models/pokemon'
+require_relative 'views/index'
+
+end
 
 binding.pry
 
