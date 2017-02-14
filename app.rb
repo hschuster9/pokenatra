@@ -35,3 +35,9 @@ put '/pokemons/:id' do
   @pokemon.update(params[:pokemon])
   redirect "pokemons/#{@pokemon.id}"
 end
+
+delete '/pokemons/:id' do
+  @pokemon = Pokemon.find(params[:id])
+  @pokemon.destroy
+  redirect '/pokemons'
+end
